@@ -8,6 +8,7 @@
     <title>ManiFolio</title>
     <meta name="keywords" content="ManiPandian, Full stack developer, Software engineer" />
     <meta name="description" content="ManiPandian | Developer | Software developed | full stack developed" />
+    <script src="https://kit.fontawesome.com/a4e5509cf1.js" crossorigin="anonymous"></script>
 
     <!-- Required librarys -->
     <link
@@ -31,7 +32,7 @@
         <h1 class="hero-title" class="load-hidden">
           Hi, my name is <span class="text-color-main">Manikandan T</span>
           <br />
-          I'm the Full Stack Developer.
+          I'm the Software Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -44,35 +45,39 @@
     <section id="about">
       <div class="container">
         <h2 class="section-title">
-          About me
+          Technological Skills
         </h2>
         <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
-              <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
+            <div class='skills'>
+              <p>I always enjoy learning new things. Especially the technologies that make your company special.</p>
+              <ul>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt"></i> CSS3</li>
+              </ul>
+              <ul>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fas fa-project-diagram"></i> Redux</li>
+              </ul>
+              <ul>
+                <li><i class="fab fa-node"></i> Node.js</li>
+                <li><i class="fab fa-node-js"></i> Express.js</li>
+              </ul>
+              <ul>
+                <li><i class="fas fa-database"></i> PostgreSQL</li>
+              </ul>   
+              <ul>
+                <li><i class="fab fa-git-square"></i> Git</li>
+                <li><i class="fab fa-github"></i> Github</li>
+                <li><i class="fab fa-github"></i> Gitlab</li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-            Hi, I am a self-thought logical thining full stack developer. I live in India. I am absolutely geeks to do extraordinary behind the scene things in web development. I am interested to play both front ends back end of the web page. And I am always interested to explore new things in the tech industry. 
-              </p>
-              <p class="about-wrapper__info-text">
-                I have two years of industrial experience as a front end developer. In that, I am working under web product development like gauges and maps using SVG. Mostly we did all our algorithms in TS and configure the JS for other web frameworks like React, Angular, VUE, Blazor, ASP.NET Core, and MVC.
-              </p>
-              <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
-                  View Resume
-                </a>
-              </span>
-            </div>
-          </div>
+          <span class="d-flex mt-3">
+            <a target="_blank" class="cta-btn cta-btn--resume" href="" >
+              View Resume
+            </a>
+          </span>
         </div>
       </div>
     </section>
@@ -93,9 +98,19 @@
                 <h3 class="project-wrapper__text-title">Face Recognition</h3>
                 <div>
                   <p class="mb-4">
-                    A <b>React js</b> web application which is used to sense the human face present in an image. It has an option for
-                    login in to registered user data which is stored in <b>postgreSQL</b> database. And all user authentications are done from the <b>Node.js(Express)</b> based server and the server also fetch face recognition based data from external API.
-                    Its a highly responsive mobile-friendly web app to analyze your images and sense the face.
+                    This smart app implements a trained computer vision AI system to 
+                    analyze any image you upload, returning information according to the model of your choice:
+                    <br/>
+                    <span><b>Face recognition:</b></span> Detects the presence and location of human 
+                    faces in your image. <br/>
+                    <span><b>Color identifier:</b></span> Identifies the dominant colors present in your image. <br />
+                    <span><b>Apparel detector:</b></span> Recognizes clothing, accesories, and other fashion related items in your image. <br />
+                    (Improving)
+                    <br />
+                    <br />
+                    <span><b>Technologies applied:</b></span>
+                    <br />
+                    React | Node.js | Express.js | PostgreSQL
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://mani-facerecognition.herokuapp.com/">
@@ -108,7 +123,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://mani-facerecognition.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/project1.jpg" />
                   </div>
@@ -126,6 +141,12 @@
                 <div>
                   <p class="mb-4">
                    A react based web page to show list of robo friends(user data) in contact and also have a serach bar to short list based on name. Data has been fetched from external API in raw json format. Its an highly responsive and fast UI webpage.
+                   (Improving)
+                   <br />
+                   <br />
+                   <span><b>Technologies applied:</b></span>
+                   <br />
+                   React | Redux
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://manipandian.github.io/Robofriends/">
@@ -138,7 +159,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://manipandian.github.io/Robofriends/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/project2.jpg" />
                   </div>
@@ -156,6 +177,12 @@
                 <div>
                   <p class="mb-4">
                    A simeple static web application to generate the background color css code snippet by choosing two different color. We can also genereate a random color by button click. We can also convert color format between HEX and RGBA.
+                   (Improving)
+                   <br />
+                   <br />
+                   <span><b>Technologies applied:</b></span>
+                   <br />
+                   HTML | CSS | JS
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://manipandian.github.io/Background-Generator/">
@@ -168,7 +195,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
+                <a href="https://manipandian.github.io/Background-Generator/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/project3.jpg" />
                   </div>
@@ -192,12 +219,12 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            [Put your call to action here]
+            Want to get in touch? Send me an email so we can start getting things done.
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="manipandi.mech@gmail.com"
+            href="mailto:manipandi.mech@gmail.com"
             >Call to Action</a
           >
         </div>

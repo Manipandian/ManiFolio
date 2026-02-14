@@ -3,7 +3,7 @@ export default function() {
   const defaultProps = {
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     distance: '30px',
-    duration: 1000,
+    duration: 800,
     desktop: true,
     mobile: true
   };
@@ -12,8 +12,9 @@ export default function() {
   ScrollReveal().reveal('.section-title', 
     assignProps(
       {
-        delay:300,distance:'0px', 
-        origin:'bottom'
+        delay: 100,
+        distance: '0px', 
+        origin: 'bottom'
       }, defaultProps)
   );
 
@@ -21,7 +22,15 @@ export default function() {
   ScrollReveal().reveal('.hero-title', 
     assignProps(
       { 
-        delay: 500, 
+        delay: 200, 
+        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+      }, defaultProps)
+  );
+
+  ScrollReveal().reveal('.hero-subtitle', 
+    assignProps(
+      { 
+        delay: 350, 
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
@@ -29,25 +38,37 @@ export default function() {
   ScrollReveal().reveal('.hero-cta', 
     assignProps(
       {
-        delay: 1000, 
+        delay: 500, 
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
 
   /* About Section */
-  ScrollReveal().reveal('.about-wrapper__image', 
+  ScrollReveal().reveal('.about-wrapper__info', 
     assignProps(
       {
-        delay: 600,
+        delay: 200,
         origin: 'bottom'
       }, defaultProps)
   );
 
-  ScrollReveal().reveal('.about-wrapper__info', 
+  /* Skills Section */
+  ScrollReveal().reveal('.skill-category', 
     assignProps(
       {
-        delay: 1000,
-        origin: window.innerWidth > 768 ? 'left' : 'bottom'
+        delay: 150,
+        origin: 'bottom',
+        interval: 80
+      }, defaultProps)
+  );
+
+  /* Experience Section */
+  ScrollReveal().reveal('.experience-item', 
+    assignProps(
+      {
+        delay: 200,
+        origin: 'bottom',
+        interval: 150
       }, defaultProps)
   );
 
@@ -55,7 +76,7 @@ export default function() {
   ScrollReveal().reveal('.project-wrapper__text', 
     assignProps(
       {
-        delay: 500,
+        delay: 200,
         origin: window.innerWidth > 768 ? 'left' : 'bottom'
       }, defaultProps)
   );
@@ -63,8 +84,18 @@ export default function() {
   ScrollReveal().reveal('.project-wrapper__image', 
     assignProps(
       {
-        delay: 1000,
+        delay: 350,
         origin: window.innerWidth > 768 ? 'right' : 'bottom'
+      }, defaultProps)
+  );
+
+  /* Awards Section */
+  ScrollReveal().reveal('.award-item', 
+    assignProps(
+      {
+        delay: 150,
+        origin: 'bottom',
+        interval: 100
       }, defaultProps)
   );
 
@@ -72,7 +103,7 @@ export default function() {
   ScrollReveal().reveal('.contact-wrapper', 
     assignProps(
       {
-        delay: 800,
+        delay: 200,
         origin: 'bottom'
       }, defaultProps)
   );

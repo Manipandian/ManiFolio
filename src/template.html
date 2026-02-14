@@ -5,23 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
-    <title>ManiFolio</title>
-    <meta name="keywords" content="ManiPandian, Full stack developer, Software engineer" />
-    <meta name="description" content="ManiPandian | Developer | Software developed | full stack developed" />
+    <title>Manikandan | Senior Frontend Engineer</title>
+    <meta name="keywords" content="Manikandan, Senior Frontend Engineer, React Developer, TypeScript, Micro-frontends, Web Components, Stencil" />
+    <meta name="description" content="Manikandan - Senior Frontend Engineer with 7+ years of experience building scalable, high-performance SaaS platforms using React, TypeScript, and modern frontend architectures." />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Manikandan | Senior Frontend Engineer" />
+    <meta property="og:description" content="7+ years building scalable SaaS platforms with React, TypeScript & modern frontend architectures" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a4e5509cf1.js" crossorigin="anonymous"></script>
-
-    <!-- Required librarys -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
     </script>
-
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <div id="top"></div>
@@ -29,13 +35,17 @@
     <!-- **** Hero Section **** -->
     <div id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Manikandan T</span>
+        <h1 class="hero-title load-hidden">
+          Hi, I'm <span class="text-color-main">Manikandan</span>
           <br />
-          I'm the Web Developer.
+          Senior Frontend Engineer
         </h1>
-        <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        <p class="hero-subtitle load-hidden">
+          7+ years building scalable, high-performance SaaS platforms
+        </p>
+        <p class="hero-cta load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">About Me</a>
+          <a class="cta-btn cta-btn--hero-secondary" href="#experience">Experience</a>
         </p>
       </div>
     </div>
@@ -44,122 +54,243 @@
     <!-- **** About Section **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">
-          Technological Skills
-        </h2>
+        <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
-            <div class='skills'>
-              <p>I always enjoy learning new things. Especially the technologies that make your company special.</p>
-              <ul>
-                <li><i class="fab fa-react"></i> React</li>
-                <li><i class="fas fa-project-diagram"></i> Redux</li>
-                <li><i class="fas fa-project-diagram"></i> Stencil</li>
-              </ul>
-              <ul>
-                <li><i class="fab fa-js-square"></i> TypeScript</li>
-                <li><i class="fab fa-js-square"></i> JavaScript</li>
-              </ul>
-              <ul>
-                <li><i class="fab fa-css3-alt"></i> Sass</li>
-                <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                <li><i class="fab fa-html5"></i> HTML5</li>
-              </ul>
-              <ul>
-                <li><i class="fab fa-node"></i> Node.js</li>
-                <li><i class="fab fa-node-js"></i> Express.js</li>
-              </ul>
-              <ul>
-                <li><i class="fas fa-database"></i> PostgreSQL</li>
-              </ul>   
-            </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Senior Frontend Engineer with <strong>7+ years of experience</strong> building scalable, high-performance SaaS platforms using React, TypeScript, and modern frontend architectures.
+            </p>
+            <p class="about-wrapper__info-text">
+              Strong expertise in <strong>UI systems, performance optimization, state management, and micro-frontend platforms</strong>. Experienced in cross-team collaboration, backend integration, and distributed systems.
+            </p>
+            <p class="about-wrapper__info-text">
+              Passionate about contributing across frontend and backend boundaries in product-driven environments.
+            </p>
+            <span class="about-wrapper__cta">
+              <a target="_blank" class="cta-btn cta-btn--resume" href="https://github.com/Manipandian/ManiFolio/raw/master/src/assets/manikandan.pdf">
+                <i class="fas fa-download"></i> View Resume
+              </a>
+            </span>
           </div>
-          <span class="d-flex mt-3">
-            <a target="_blank" class="cta-btn cta-btn--resume" href="https://github.com/Manipandian/ManiFolio/blob/master/src/assets/resume-FE-with-sqsft-updated%20(1).pdf" >
-              View Resume
-            </a>
-          </span>
         </div>
       </div>
     </section>
     <!-- /END About Section -->
 
+    <!-- **** Skills Section **** -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title dark-blue-text">Technical Expertise</h2>
+        <div class="skills-wrapper">
+          <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--primary">React</span>
+              <span class="skill-tag skill-tag--primary">TypeScript</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">SCSS</span>
+              <span class="skill-tag">AngularJS</span>
+              <span class="skill-tag skill-tag--primary">Stencil</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-database"></i> State & Data</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--primary">Redux Toolkit</span>
+              <span class="skill-tag">Context API</span>
+              <span class="skill-tag">REST API</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-vial"></i> Testing</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Jest</span>
+              <span class="skill-tag">Playwright</span>
+              <span class="skill-tag">Jasmine</span>
+              <span class="skill-tag">Enzyme</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Build & Tooling</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--primary">Webpack</span>
+              <span class="skill-tag skill-tag--primary">Module Federation</span>
+              <span class="skill-tag">Gulp</span>
+              <span class="skill-tag">NPM</span>
+              <span class="skill-tag">Storybook</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-sitemap"></i> Architecture</h3>
+            <div class="skill-tags">
+              <span class="skill-tag skill-tag--primary">Micro-frontends</span>
+              <span class="skill-tag skill-tag--primary">Web Components</span>
+              <span class="skill-tag">Shared UI Systems</span>
+              <span class="skill-tag">Client-Side Routing</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3><i class="fas fa-users"></i> Collaboration</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Jira</span>
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Distributed Teams</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
+
+    <!-- **** Experience Section **** -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-wrapper">
+          
+          <!-- Broadcom -->
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <div class="experience-item__company">
+                <h3>Broadcom</h3>
+                <span class="experience-item__product">Clarity PPM</span>
+              </div>
+              <div class="experience-item__meta">
+                <span class="experience-item__role">Senior Frontend Engineer</span>
+                <span class="experience-item__duration"><i class="far fa-calendar-alt"></i> Oct 2022 - Present</span>
+                <span class="experience-item__location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+              </div>
+            </div>
+            <div class="experience-item__content">
+              <ul>
+                <li>Contributing to <strong>Clarity PPM</strong>, a large-scale enterprise SaaS platform used by thousands of enterprise customers, working within a hybrid <strong>Stencil + AngularJS</strong> architecture.</li>
+                <li>Designed and implemented a <strong>Stencil infrastructure layer</strong> enabling AngularJS and Web Components to run in parallel, supporting phased modernization across multiple product modules.</li>
+                <li>Built a <strong>custom client-side router</strong> for Stencil, integrated with AngularJS routing, enabling seamless navigation across legacy and modern UI layers.</li>
+                <li>Engineered a <strong>Redux Toolkit-based shared state layer</strong>, synchronizing state between Stencil and AngularJS, reducing cross-framework state bugs.</li>
+                <li>Actively participated in code reviews, enforcing architectural consistency, performance best practices, and maintainable patterns.</li>
+                <li>Worked closely with backend teams on API contracts, data models, authentication flows, and service integration.</li>
+              </ul>
+              <div class="experience-item__tech">
+                <span>StencilJS</span>
+                <span>TypeScript</span>
+                <span>Redux Toolkit</span>
+                <span>AngularJS</span>
+                <span>Jest</span>
+                <span>Playwright</span>
+                <span>Storybook</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PepsiCo -->
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <div class="experience-item__company">
+                <h3>PepsiCo</h3>
+                <span class="experience-item__product">Sales Planning Platform</span>
+              </div>
+              <div class="experience-item__meta">
+                <span class="experience-item__role">Senior Associate Consultant (Infosys)</span>
+                <span class="experience-item__duration"><i class="far fa-calendar-alt"></i> May 2021 - Sep 2022</span>
+                <span class="experience-item__location"><i class="fas fa-map-marker-alt"></i> Remote, India</span>
+              </div>
+            </div>
+            <div class="experience-item__content">
+              <ul>
+                <li>Played a key role in migrating the Sales Planning platform from <strong>JSP to modern React + TypeScript</strong> architecture.</li>
+                <li>Designed and built the application from scratch, establishing scalable frontend foundations using <strong>React, Redux Toolkit, and React Router</strong>.</li>
+                <li>Developed <strong>four independent frontend applications</strong>, supporting modular development and parallel team delivery.</li>
+                <li>Implemented <strong>Webpack Module Federation</strong> to enable a micro-frontend architecture with independently deployable modules.</li>
+                <li>Built a <strong>shared UI component library</strong> and published it as a private NPM package, enabling reuse across multiple micro-frontend applications.</li>
+                <li>Collaborated with Azure-based CI/CD pipelines and internal NPM artifact repositories for scalable build and release workflows.</li>
+              </ul>
+              <div class="experience-item__tech">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Redux Toolkit</span>
+                <span>Webpack</span>
+                <span>Module Federation</span>
+                <span>Material-UI</span>
+                <span>Jest</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Syncfusion -->
+          <div class="experience-item">
+            <div class="experience-item__header">
+              <div class="experience-item__company">
+                <h3>Syncfusion</h3>
+                <span class="experience-item__product">UI Component Library</span>
+              </div>
+              <div class="experience-item__meta">
+                <span class="experience-item__role">Software Engineer</span>
+                <span class="experience-item__duration"><i class="far fa-calendar-alt"></i> Apr 2019 - May 2021</span>
+                <span class="experience-item__location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+              </div>
+            </div>
+            <div class="experience-item__content">
+              <ul>
+                <li>Contributed to the development of a <strong>framework-agnostic Web Components UI library</strong> using TypeScript, consumed across multiple Syncfusion products.</li>
+                <li>Built and enhanced <strong>Map components</strong> capable of rendering GeoJSON data using SVG and tile providers such as OpenStreetMap and Bing Maps.</li>
+                <li>Implemented advanced map features including <strong>data labels, marker clustering, and interactive overlays</strong>, improving usability for large datasets.</li>
+                <li>Developed <strong>Circular and Linear Gauge components</strong> using SVG and TypeScript, delivering core features and extending functionality based on customer requirements.</li>
+                <li>Ensured cross-browser compatibility, component lifecycle stability, and consistent styling across major browsers.</li>
+              </ul>
+              <div class="experience-item__tech">
+                <span>TypeScript</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>SVG</span>
+                <span>Web Components</span>
+                <span>Jest</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Experience Section -->
+
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">
-            Projects
-          </h2>
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-12 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">PPM Saas Product</h3>
-                <div>
-                  <p class="mb-4">
-                    Working on Project Portfolio Management Saas product to migrate their
-                    FrontEnd technology from  <strong>AngularJs to Stencil.</strong>. Did all initial configurations to consume Stencil web components inside AngularJs. Currently working on multiple tech debts came as part of this migration.
-                    <br />
-                    <br />
-                    <span><b>Technologies applied:</b></span>
-                    <br />
-                    Stencil | TypeScript | AngularJs | Gulp | Playwright | Jest
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-12 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Pepsico SalesPlanning</h3>
-                <div>
-                  <p class="mb-4">
-                    Worked on Pepsico | Sales Planning project, were
-responsible for design and development of 4 applications under
-this project. All are <strong>React based Micro frontend applications</strong>
-created from scratch with all webpack configuration.
-                    <br />
-                    <br />
-                    <span><b>Technologies applied:</b></span>
-                    <br />
-                    React | JavaScript | Redux Toolkit | MUI | Jest/Enzyme | Webpack | Module Federation
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
+          <h2 class="section-title dark-blue-text">Open Source & Projects</h2>
+          
+          <!-- React Maps Library -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">REACT MAPS LIBRARY</h3>
+                <h3 class="project-wrapper__text-title">React Maps Library</h3>
                 <div>
                   <p class="mb-4">
-                    React Map Library used for rendering MAPS from GeoJSON data using SVG or other map providers like OpenStreetMap and Bing Maps as a tile. Add features like data label, marker cluster and fix various bugs and play important role in performance improvement by using React, SVG, TypeScript.
-                   <br />
-                   <br />
-                   <span><b>Technologies applied:</b></span>
-                   <br />
-                   React | JavaScript | TypeScript | SVG
+                    A comprehensive React Map Library for rendering maps from GeoJSON data using SVG or tile providers like OpenStreetMap and Bing Maps. Features include data labels, marker clustering, and interactive overlays with optimized performance for large datasets.
                   </p>
+                  <div class="project-wrapper__tech">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>SVG</span>
+                    <span>GeoJSON</span>
+                  </div>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://www.syncfusion.com/react-ui-components/react-maps">
-                  See Live
+                  <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/maps">
-                  Source Code
+                  <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://manipandian.github.io/Robofriends/" target="_blank">
+                <a href="https://www.syncfusion.com/react-ui-components/react-maps" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/mapSample.PNG" />
+                    <img class="img-fluid" src="./assets/mapSample.PNG" alt="React Maps Library" />
                   </div>
                 </a>
               </div>
@@ -167,105 +298,91 @@ created from scratch with all webpack configuration.
           </div>
           <!-- /END Project -->
 
-          <!-- Each .row is a project -->
+          <!-- React Circular Gauge -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">REACT CIRCULAR GAUGE LIBRARY</h3>
+                <h3 class="project-wrapper__text-title">React Circular Gauge</h3>
                 <div>
                   <p class="mb-4">
-                    React Circular Gauge Chart Component using React framework and SVG and TypeScript as a team player. Add most of features while component creation and add new features based on customer requirements.
-                   <br />
-                   <br />
-                   <span><b>Technologies applied:</b></span>
-                   <br />
-                   React | JavaScript | TypeScript | SVG
+                    A feature-rich React Circular Gauge component built with SVG and TypeScript. Designed for data visualization dashboards with customizable ranges, pointers, and annotations. Optimized for performance and cross-browser compatibility.
                   </p>
+                  <div class="project-wrapper__tech">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>SVG</span>
+                    <span>Data Viz</span>
+                  </div>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://www.syncfusion.com/react-ui-components/react-circular-gauge">
-                  See Live
+                  <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/syncfusion/ej2-react-ui-components/tree/master/components/circulargauge">
-                  Source Code
+                  <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://manipandian.github.io/Background-Generator/" target="_blank">
+                <a href="https://www.syncfusion.com/react-ui-components/react-circular-gauge" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/gaugeSample.PNG" />
+                    <img class="img-fluid" src="./assets/gaugeSample.PNG" alt="React Circular Gauge" />
                   </div>
                 </a>
               </div>
             </div>
           </div>
           <!-- /END Project -->
-
-                <!-- Each .row is a project -->
-                <div class="row">
-                  <div class="col-lg-4 col-sm-12">
-                    <div class="project-wrapper__text">
-                      <h3 class="project-wrapper__text-title">Smart image sensing app</h3>
-                      <div>
-                        <p class="mb-4">
-                          This smart app implements a trained computer vision AI system to 
-                          analyze any image you upload, returning information according to the model of your choice:
-                          <br/>
-                          <span><b>Face recognition:</b></span> Detects the presence and location of human 
-                          faces in your image. <br/>
-                          <span><b>Color identifier:</b></span> Identifies the dominant colors present in your image. <br />
-                          <span><b>Apparel detector:</b></span> Recognizes clothing, accesories, and other fashion related items in your image. <br />
-                          (Improving)
-                          <br />
-                          <br />
-                          <span><b>Technologies applied:</b></span>
-                          <br />
-                          React(Redux) | Node.js | Express.js | PostgreSQL
-                        </p>
-                      </div>
-                      <a target="_blank" class="cta-btn cta-btn--hero" href="https://smart-imagesense.herokuapp.com/">
-                        See Live
-                      </a>
-                      <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Manipandian/smart-imagesense">
-                        Source Code
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-8 col-sm-12">
-                    <div class="project-wrapper__image">
-                      <a href="https://mani-facerecognition.herokuapp.com/" target="_blank">
-                        <div data-tilt class="thumbnail rounded">
-                          <img class="img-fluid" src="./assets/imageSenseSample.PNG" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- /END Project -->
-
 
         </div>
       </div>
     </section>
     <!-- /END Projects Section -->
 
+    <!-- **** Awards Section **** -->
+    <section id="awards">
+      <div class="container">
+        <h2 class="section-title">Honors & Awards</h2>
+        <div class="awards-wrapper">
+          <div class="award-item">
+            <i class="fas fa-trophy"></i>
+            <h3>Hackathon 2023</h3>
+            <span>Broadcom</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-award"></i>
+            <h3>Insta Award</h3>
+            <span>Infosys</span>
+          </div>
+          <div class="award-item">
+            <i class="fas fa-medal"></i>
+            <h3>Sprint Champion</h3>
+            <span>PepsiCo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Awards Section -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
+        <h2 class="section-title">Let's Connect</h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            Want to get in touch? Send me an email so we can start getting things done.
+            Interested in working together or have a question? I'd love to hear from you!
           </p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:manipandi.mech@gmail.com"
-            >Call to Action</a
-          >
+          <div class="contact-icons">
+            <a href="mailto:manipandi.mech@gmail.com" class="contact-icon" aria-label="Email" title="Email Me">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/manipandian97" target="_blank" class="contact-icon" aria-label="LinkedIn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Manipandian" target="_blank" class="contact-icon" aria-label="GitHub" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -277,21 +394,16 @@ created from scratch with all webpack configuration.
         <a href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/manipandian97" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="https://github.com/Manipandian" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
         <hr />
         <p class="footer__text">
-          © 2020 - Website developed by <a href="https://github.com/Manipandian" target="_blank">Manipandian</a>
-          </a>
+          &copy; <span id="year"></span> Manikandan. Built with passion.
         </p>
       </div>
     </footer>
     <!-- /END Footer Section -->
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

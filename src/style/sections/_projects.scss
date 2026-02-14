@@ -1,23 +1,18 @@
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -10rem;
-  padding-top: 15rem;
-
-  @include respond(tab-land) {
-    margin-top: 0;
-    padding-top: 5rem;
-  }
+  padding: 8rem 0;
 
   .project-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
     }
 
     .row {
-      margin-bottom: 8rem;
+      margin-bottom: 6rem;
+      align-items: center;
 
       @include respond(phone) {
         margin-bottom: 4rem;
@@ -35,17 +30,40 @@
       }
 
       &-title {
-        font-weight: bold;
+        font-weight: 700;
         margin-bottom: 1.8rem;
-        font-size: $mid-font-size;
+        font-size: 2.4rem;
+        color: $dark-blue-text;
 
         @include respond(phone) {
           font-size: 2rem;
         }
       }
 
+      p {
+        font-size: 1.6rem;
+        line-height: 1.7;
+        color: #555;
+      }
+
       & p > a {
         color: $secondary-color;
+      }
+    }
+
+    &__tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin: 2rem 0;
+
+      span {
+        background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        color: $white-color;
+        padding: 0.4rem 1rem;
+        border-radius: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
       }
     }
 
@@ -60,17 +78,24 @@
 
       & .thumbnail {
         border: none;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-        transition: all 0.2s ease-out;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
-          0.5s box-shadow,
-          0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
 
         @include respond(phone) {
-          border: 1px solid #d2d2d2;
+          border: 1px solid #e0e0e0;
           box-shadow: none;
           margin-bottom: 3.2rem;
+        }
+
+        img {
+          border-radius: 1rem;
         }
       }
     }

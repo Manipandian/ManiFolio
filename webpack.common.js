@@ -11,17 +11,11 @@ module.exports = {
         use: ["html-loader"]
       },
       {
-        test: /\.(jpg|jpeg|png|PNG|gif|svg|pdf)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[hash].[ext]",
-              outputPath: "assets",
-              esModule: false
-            }
-          }
-        ]
+        test: /\.(jpg|jpeg|png|PNG|gif|svg|pdf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name].[hash][ext]"
+        }
       }
     ]
   },

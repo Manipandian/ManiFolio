@@ -1,9 +1,12 @@
-import tilt from 'tilt.js';
+import VanillaTilt from 'vanilla-tilt';
 
 const initTilt = () => {
   // Projects images
-  $('.project-wrapper__image a div').tilt({
-    maxTilt: 3,
+  const elements = document.querySelectorAll('.project-wrapper__image a div');
+  VanillaTilt.init(elements, {
+    max: 3,
+    speed: 400,
+    glare: false
   });
 };
 

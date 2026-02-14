@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A clean and neet webpage for my portfolio",
   "main": "index.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "start": "webpack serve --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
